@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Telegram.Bot" Version="15.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Reminder.Core\Reminder.Core.csproj" />
+    <ProjectReference Include="..\Reminder.Sender.TelegrammReminder\Reminder.Reciever.TelegrammReciever.csproj" />
+    <ProjectReference Include="..\Reminder.Sender.TelegramSender\Reminder.Sender.TelegramSender.csproj" />
+    <ProjectReference Include="..\Reminder.Storage.Core\Reminder.Storage.Core.csproj" />
+    <ProjectReference Include="..\ReminderStorage.InMemory\ReminderStorage.InMemory.csproj" />
+  </ItemGroup>
+
+</Project>
